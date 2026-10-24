@@ -11,3 +11,5 @@ html[data-theme="dark"]{--bg:#071321;--fg:#e8f1ff;--surface:#102137;--muted:#9db
 .work-detail summary::-webkit-details-marker{display:none}.work-detail summary:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
 .work-detail .summary-arrow{font-size:22px;transition:transform .2s}.work-detail[open] .summary-arrow{transform:rotate(180deg)}
 .work-detail ul{margin:0;padding:0 23px 19px 40px;color:var(--muted);font-size:14px}.work-detail li{margin-top:10px;line-height:1.65}
+
+.react-skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}@media(max-width:760px){.react-skills-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.react-skills-grid{grid-template-columns:1fr}}
