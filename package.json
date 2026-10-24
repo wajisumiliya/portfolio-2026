@@ -1,0 +1,20 @@
+{
+  "name": "mwa-portfolio-2026",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
