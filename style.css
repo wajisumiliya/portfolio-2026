@@ -13,3 +13,36 @@ html[data-theme="dark"]{--bg:#071321;--fg:#e8f1ff;--surface:#102137;--muted:#9db
 .work-detail ul{margin:0;padding:0 23px 19px 40px;color:var(--muted);font-size:14px}.work-detail li{margin-top:10px;line-height:1.65}
 
 .react-skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}@media(max-width:760px){.react-skills-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.react-skills-grid{grid-template-columns:1fr}}
+
+/* Visual design upgrade */
+.hero{background-image:radial-gradient(circle at 15% 18%,rgba(72,154,255,.09),transparent 35%),linear-gradient(115deg,transparent 64%,rgba(22,188,187,.045));isolation:isolate}
+.hero h1{background:linear-gradient(130deg,var(--fg) 10%,var(--fg) 60%,var(--blue));background-clip:text;-webkit-background-clip:text}
+.hero h1 span{background:linear-gradient(110deg,#2674eb,#06b8c2);background-clip:text;-webkit-background-clip:text;color:transparent}
+.showcase{perspective:950px}
+.orbital{position:absolute;border:1px dashed color-mix(in srgb,var(--blue) 34%,transparent);border-radius:50%;pointer-events:none;animation:orbit-spin 30s linear infinite}
+.orbital-one{height:495px;width:495px}.orbital-two{height:340px;width:340px;animation-direction:reverse;animation-duration:22s}
+.spark{position:absolute;color:var(--aqua);font-size:32px;animation:sparkle 4s ease-in-out infinite}.spark-one{top:5px;left:24px}.spark-two{bottom:22px;right:28px;animation-delay:-2s}
+.dev-window{box-shadow:0 37px 75px #063f8d42,0 0 0 9px #5ca9ff0a;transition:box-shadow .3s,transform .3s}
+.dev-window:hover{box-shadow:0 45px 110px #267bdb66;transform:rotate(0deg) translateY(-8px)}
+.visual-tech-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;margin-top:65px;padding:18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.visual-tech-strip span{font-weight:800;font-size:10px;color:var(--muted);letter-spacing:.16em}
+.visual-tech-strip b{font:700 14px 'Space Grotesk',sans-serif;color:var(--fg);padding:6px 12px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.numbers{margin-top:28px}
+.project-art{isolation:isolate}.project-art:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffffff37,transparent 60%);pointer-events:none}
+.project-art .miniapp{display:flex;gap:11px;transition:transform .45s;position:relative}
+.project:hover .miniapp{transform:rotate(-1deg) translateY(10px) scale(1.045)}
+.mock-sidebar{display:flex;flex-direction:column;gap:11px;width:19%;border-radius:7px;background:#e7edfa;padding:13px 9px}
+.mock-sidebar i{height:8px;border-radius:5px;background:#adc1e4}
+.mock-main{flex:1;min-width:0}
+.project-art .miniapp .squares i{height:55px;background:linear-gradient(155deg,#d7e9ff,#b6d3f7)}
+.project-art.b .miniapp .squares i{background:linear-gradient(155deg,#d7fcf6,#b3e6dc)}
+.project-art.c .miniapp .squares i{background:linear-gradient(155deg,#e9e0ff,#c9bbf3)}
+.project-art.d .miniapp .squares i{background:linear-gradient(155deg,#fff3da,#eac9a2)}
+.quote-banner{background:linear-gradient(115deg,#112d56,#15549c);position:relative;overflow:hidden}
+.quote-inner{display:flex;align-items:center;justify-content:center;gap:36px;padding-top:52px;padding-bottom:52px}
+.quote-inner p{font:500 clamp(20px,2.8vw,32px)/1.45 'Space Grotesk',sans-serif;letter-spacing:-.03em;color:#e4efff;max-width:900px;margin:0}
+.quote-inner strong{color:#8fd8ff}.quote-mark{font:700 93px Georgia,serif;color:#76b7f8}.quote-decor{font-size:70px;color:#ffffff26}
+.skill-card{position:relative;overflow:hidden}.skill-card:before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--blue),var(--aqua));transform:scaleX(0);transform-origin:left;transition:transform .3s}.skill-card:hover:before{transform:scaleX(1)}
+@keyframes orbit-spin{to{transform:rotate(360deg)}}@keyframes sparkle{50%{opacity:.35;transform:scale(1.3)}}
+@media(max-width:760px){.orbital-one{height:365px;width:365px}.orbital-two{width:255px;height:255px}.visual-tech-strip{margin-top:30px;gap:8px}.quote-inner{gap:15px}.quote-mark{font-size:55px}.quote-decor{display:none}}
+@media(prefers-reduced-motion:reduce){.orbital,.spark{animation:none}}
